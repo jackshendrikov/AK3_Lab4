@@ -7,13 +7,13 @@ The aim is to study the architectural features, command systems, principles of o
 
 1. Develop a program in assembler to calculate the function specified in the table below, ensuring the formation of the result in the independently selected register. Use supplementary code to present the source data.
 
-<p align="center">
+<center>
 
 |                Function               | X1  | X2 | X3 | X4 |
 |:-------------------------------------:|-----|----|----|----|
 | `F = 8 * (X1 - X2) + (X3 ⊕ X4 - 1) / 16` | `-21`|`31` | `10` | `-9` |
 
-</p>
+</center>
 
 2. Perform analysis of the established features and normalization of the result according to the algorithm below:
 	1. Check the sign of the result (`F`) overflow outside the bit grid, if there was an overflow to correct the result by shifting the result to the right and writing the value of the overflow to the highest digit, if not, go to step 2;
