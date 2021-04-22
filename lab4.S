@@ -127,8 +127,8 @@ jump2:
 program_b:
 	push {lr}
 jump5:
-	// 10: r2 = r2 + 39
-	add r2, #39
+	// 10: r2 = r2 + 45
+	add r2, #45
 	
 	// 11: jump4
 	bcs jump4
@@ -155,7 +155,7 @@ program_c:
 	// 17: r0 = r1 + r2
 	adds r0, r1, r2
 	
-	// 18: r0 = r1 / r2
-	udiv r0, r1, r2
+	// 18: r0 = r2 / r1
+	udiv r0, r2, r1
 	
 	pop {pc}
